@@ -333,7 +333,7 @@ default['postgresql']['pgdg']['repo_rpm_url'] = {
     "redhat" => {
       "7" => {
         "x86_64" => "http://yum.postgresql.org/9.5/redhat/rhel-7-x86_64/pgdg-redhat95-9.5-2.noarch.rpm"
-      }
+      },
       "6" => {
         "i386" => "http://yum.postgresql.org/9.5/redhat/rhel-6-i386/pgdg-redhat95-9.5-2.noarch.rpm",
         "x86_64" => "http://yum.postgresql.org/9.5/redhat/rhel-6-x86_64/pgdg-redhat95-9.5-2.noarch.rpm"
