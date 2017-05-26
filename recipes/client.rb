@@ -25,7 +25,7 @@ when 'debian'
   if node['postgresql']['enable_pgdg_apt']
     include_recipe 'postgresql::apt_pgdg_postgresql'
   end
-when 'rhel', 'fedora'
+when 'rhel', 'fedora', 'amazon'
   if node['postgresql']['enable_pgdg_yum']
     include_recipe 'postgresql::yum_pgdg_postgresql'
   end

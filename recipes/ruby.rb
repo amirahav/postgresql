@@ -32,7 +32,7 @@ rescue LoadError
   node.override['build-essential']['compile_time'] = true
   include_recipe 'build-essential'
 
-  if node['postgresql']['enable_pgdg_yum'] && platform_family?('rhel', 'fedora')
+  if node['postgresql']['enable_pgdg_yum'] && platform_family?('rhel', 'fedora', 'amazon')
     include_recipe 'postgresql::yum_pgdg_postgresql'
 
     rpm_platform = node['platform']
